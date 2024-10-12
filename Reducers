@@ -1,0 +1,18 @@
+var rockets = [
+  { country: 'Russia', launches: 32 },
+  { country: 'US', launches: 23 },
+  { country: 'China', launches: 16 },
+  { country: 'Europe(ESA)', launches: 7 },
+  { country: 'India', launches: 4 },
+  { country: 'Japan', launches: 3 }
+];
+
+// Calculate the total number of launches
+
+var totalLaunches = rockets.reduce((sum, rocket) => sum + rocket.launches, 0);
+
+// Calculate the average number of launches
+
+var averageLaunches = totalLaunches / rockets.length;
+
+console.log("Average number of launches: " + averageLaunches);
